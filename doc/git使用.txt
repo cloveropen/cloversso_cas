@@ -1,0 +1,12 @@
+echo "# cloversso" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/cloveropen/cloversso_cas.git
+git push -u origin master
+
+报错 Message 'src refspec master does not match any' when pushing commits in Git
+按如下方法解决:
+git add --all :/
+git commit -am 'message'
+git push -u origin master
